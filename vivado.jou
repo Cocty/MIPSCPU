@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jan  7 00:13:37 2023
+# Process ID: 24188
+# Current directory: D:/MIPSCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12972 D:\MIPSCPU\MIPSCPU.xpr
+# Log file: D:/MIPSCPU/vivado.log
+# Journal file: D:/MIPSCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/MIPSCPU/MIPSCPU.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+open_wave_config D:/MIPSCPU/mips_tb_behav.wcfg
+source mips_tb.tcl
+run 4000 ns
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_simulation
+open_wave_config D:/MIPSCPU/mips_tb_behav.wcfg
+source mips_tb.tcl
+run 4000 ns
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+refresh_design
+launch_simulation
+open_wave_config D:/MIPSCPU/mips_tb_behav.wcfg
+source mips_tb.tcl
+run 4000 ns
+close_sim

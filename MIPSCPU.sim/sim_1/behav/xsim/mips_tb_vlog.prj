@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MIPSCPU.srcs/sources_1/new/ALU.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/AluSrcA.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/BranchTest.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/CPU.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/ControlUnit.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/DataMemory.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/EX_MEM.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/Forwarding.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/HazardDetection.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/ID_EX.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/IF_ID.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/InstructionMemory.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/MEM_WB.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/MIPS_CPU.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/MUX2.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/MUX4.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/MemDataExtension.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/NextPC.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/PC.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/Register.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/SHOW_ON_LED.v" \
+"../../../../MIPSCPU.srcs/sources_1/new/SignExtension.v" \
+"../../../../MIPSCPU.srcs/sim_1/new/mips_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
